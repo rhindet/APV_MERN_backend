@@ -87,6 +87,7 @@ const autenticar = async (req,res)=>{
        //Autenticar
       
        res.json({
+        lol:"lol",
         _id:usuario.id,
         nombre:usuario.nombre,
         email:usuario.email,
