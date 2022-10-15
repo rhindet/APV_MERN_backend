@@ -1,5 +1,5 @@
 import nodemailer  from 'nodemailer'
-
+ 
 const emailRegistro = async (datos)=>{
     const transporter = nodemailer.createTransport({
         host:process.env.EMAIL_HOST ,

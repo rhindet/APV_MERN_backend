@@ -22,7 +22,7 @@ const emailOlvidePassword = async (datos)=>{
                <p>Sigue el siguiente enlace para generar tu nuevo password:
                <a href="${process.env.FRONTEND_URL}/olvide-password/${token}">Reestablecer Password</a></p>
 
-               <p> Si tu no creaste esa cuenta puedes ignorar este mensaje </p>
+               <p> Si tu no creaste esa cuenta puedes ignorar este mensaje e </p>
 
         `
       })

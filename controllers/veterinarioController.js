@@ -21,6 +21,7 @@ const registrar = async (req,res)=>{
     try {
         //Guardar un nuevo veterinario
         const veterinario = new Veterinario(req.body);
+       
         const veterinarioGuardado = await veterinario.save()
 
         //Enviar el email
@@ -89,6 +90,8 @@ const autenticar = async (req,res)=>{
         _id:usuario.id,
         nombre:usuario.nombre,
         email:usuario.email,
+        telefono:usuario.telefono, 
+        web:usuario.web,
         token:generarJWT(usuario.id),
         
        })

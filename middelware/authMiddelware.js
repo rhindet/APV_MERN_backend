@@ -5,7 +5,7 @@ import  Veterinario from "../models/Veterinario.js";
 
 
 const checkAuth = async(req,res,next)=>{
-    let token;
+   let token;
    if(req.headers.authorization && req.headers.authorization.startsWith('Bearer')){
         
         try {
